@@ -20,7 +20,7 @@ runs:
     - uses: actions/setup-node@v2
       with:
         node-version: 12
-        cache: npm
+        cache: yarn
     - run: node -v
       shell: bash
     - run: npm -v

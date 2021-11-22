@@ -22,4 +22,6 @@ runs:
         node-version: 12
         cache: npm
     - run: node -v
+      shell: bash
     - run: npm -v
+      shell: bash

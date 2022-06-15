@@ -17,10 +17,12 @@ runs:
     - id: random-number-generator
       run: echo "::set-output name=random-id::$(echo $RANDOM)"
       shell: bash
+    - run: node -e "console.log(process.env.GITHUB_WORKSPACE)"
     - uses: actions/setup-node@v2
       with:
         node-version: 12
         cache: yarn
+    - run: node -e "console.log(process.env.GITHUB_WORKSPACE)"
     - run: node -v
       shell: bash
     - run: npm -v

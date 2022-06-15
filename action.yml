@@ -19,6 +19,7 @@ runs:
       shell: bash
     - run: node -e "console.log(process.env.GITHUB_WORKSPACE)"
       shell: bash
+    - uses: actions/checkout@v3
     - uses: actions/setup-node@v2
       with:
         node-version: 12
